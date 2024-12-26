@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .chat-box {
+            margin: 20px auto;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-box textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+        .chat-box button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .chat-box button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trading Pro</h1>
+        <p>Your Gateway to Trading Knowledge and Resources</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#info">About Trading</a>
+        <a href="https://www.nseindia.com" target="_blank">Visit NSE</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <section id="info">
+            <h2>About Trading</h2>
+            <div class="info">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Stock Trading">
+                    <h3>Stock Trading</h3>
+                    <p>Learn the fundamentals of stock trading, from choosing stocks to analyzing charts.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Forex Trading">
+                    <h3>Forex Trading</h3>
+                    <p>Dive into the world of currency exchange and understand the forex market.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Crypto Trading">
+                    <h3>Crypto Trading</h3>
+                    <p>Explore cryptocurrency trading and stay ahead in the digital currency revolution.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Leave Us a Message</h2>
+            <div class="chat-box">
+                <textarea placeholder="Type your message here..."></textarea>
+                <button>Submit</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Trading Pro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
